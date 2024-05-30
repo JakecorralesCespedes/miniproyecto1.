@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniproyecto1_Calculadora </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="calculadora">
+    <div id="display">0</div>
+    <div class="buttons">
+        <button class="btn" onclick="borrarDisplay()">C</button>
+        <button class="btn" onclick="borrarUltimo()">⌫</button>
+        <button class="btn" onclick="agregarAlDisplay('%')">%</button>
+        <button class="btn operador" onclick="agregarAlDisplay('/')">÷</button>
+        <button class="btn" onclick="agregarAlDisplay('7')">7</button>
+        <button class="btn" onclick="agregarAlDisplay('8')">8</button>
+        <button class="btn" onclick="agregarAlDisplay('9')">9</button>
+        <button class="btn operador" onclick="agregarAlDisplay('*')">×</button>
+        <button class="btn" onclick="agregarAlDisplay('4')">4</button>
+        <button class="btn" onclick="agregarAlDisplay('5')">5</button>
+        <button class="btn" onclick="agregarAlDisplay('6')">6</button>
+        <button class="btn operador" onclick="agregarAlDisplay('-')">-</button>
+        <button class="btn" onclick="agregarAlDisplay('1')">1</button>
+        <button class="btn" onclick="agregarAlDisplay('2')">2</button>
+        <button class="btn" onclick="agregarAlDisplay('3')">3</button>
+        <button class="btn operador" onclick="agregarAlDisplay('+')">+</button>
+        <button class="btn" onclick="agregarAlDisplay('0')">0</button>
+        <button class="btn" onclick="agregarAlDisplay('.')">.</button>
+        <button class="btn" onclick="calcularResultado()">=</button>
+    </div>
+</div>
+
+<div class="historial">
+    <h2>Historial</h2>
+    <ul id="historial"></ul>
+</div>
+<script src="App.js"></script>
+</body>
+</html>
